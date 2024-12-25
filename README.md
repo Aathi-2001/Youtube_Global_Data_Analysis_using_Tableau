@@ -57,6 +57,6 @@ This interactive dashboard consolidates data to provide a holistic view of YouTu
 
 This project demonstrates the power of data visualization and dashboard development in understanding complex datasets. By integrating various tools and leveraging analytical techniques, the YouTube Global Data Analysis dashboard serves as a vital tool for businesses, researchers, and creators to optimize their strategies and enhance performance.
 
-### **Dashboard View:**
+### **Dashboard View**
 ![Youtube_Dashboard_view](https://github.com/user-attachments/assets/681b3a76-1986-49cc-bad0-cbf99b04ac47)
 
