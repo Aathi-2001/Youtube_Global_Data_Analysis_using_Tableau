@@ -1,0 +1,2481 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Global YouTube Statistics 1.csv+ (Multiple Connections)' inline='true' name='federated.0o1ltuq0nd7in71bvu1va0i75wov' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global YouTube Statistics 1' name='textscan.1vb5nuw1bnni0g1aajud40s7zf3j'>
+            <connection class='textscan' directory='C:/Users/arunp/Desktop/Tableau.org/Project' filename='Global YouTube Statistics 1.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Global YouTube Statistics 2' name='textscan.0dgnn0d18yggaq1h78r3w1wewzy0'>
+            <connection class='textscan' directory='C:/Users/arunp/Desktop/Tableau.org/Project' filename='Global YouTube Statistics 2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1vb5nuw1bnni0g1aajud40s7zf3j' name='Global YouTube Statistics 1.csv' table='[Global YouTube Statistics 1#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='rank' ordinal='0' />
+              <column datatype='string' name='Youtuber' ordinal='1' />
+              <column datatype='string' name='Gender' ordinal='2' />
+              <column datatype='integer' name='AGE' ordinal='3' />
+              <column datatype='integer' name='subscribers' ordinal='4' />
+              <column datatype='integer' name='video views' ordinal='5' />
+              <column datatype='string' name='category' ordinal='6' />
+              <column datatype='string' name='Title' ordinal='7' />
+              <column datatype='integer' name='uploads' ordinal='8' />
+              <column datatype='string' name='Country' ordinal='9' />
+              <column datatype='integer' name='Country_id' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1vb5nuw1bnni0g1aajud40s7zf3j' name='Global YouTube Statistics 2.csv' table='[Global YouTube Statistics 2#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='Country' ordinal='0' />
+              <column datatype='integer' name='Country_id' ordinal='1' />
+              <column datatype='string' name='Abbreviation' ordinal='2' />
+              <column datatype='string' name='channel_type' ordinal='3' />
+              <column datatype='integer' name='video_views_rank' ordinal='4' />
+              <column datatype='integer' name='country_rank' ordinal='5' />
+              <column datatype='integer' name='channel_type_rank' ordinal='6' />
+              <column datatype='integer' name='video_views_for_the_last_30_days' ordinal='7' />
+              <column datatype='real' name='lowest_monthly_earnings' ordinal='8' />
+              <column datatype='real' name='highest_monthly_earnings' ordinal='9' />
+              <column datatype='real' name='lowest_yearly_earnings' ordinal='10' />
+              <column datatype='real' name='highest_yearly_earnings' ordinal='11' />
+              <column datatype='integer' name='subscribers_for_last_30_days' ordinal='12' />
+              <column datatype='integer' name='created_year' ordinal='13' />
+              <column datatype='string' name='created_month' ordinal='14' />
+              <column datatype='integer' name='created_date' ordinal='15' />
+              <column datatype='real' name='Gross tertiary education enrollment (%)' ordinal='16' />
+              <column datatype='integer' name='Population' ordinal='17' />
+              <column datatype='real' name='Unemployment rate' ordinal='18' />
+              <column datatype='integer' name='Urban_population' ordinal='19' />
+              <column datatype='real' name='Latitude' ordinal='20' />
+              <column datatype='real' name='Longitude' ordinal='21' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[AGE]' value='[Global YouTube Statistics 1.csv].[AGE]' />
+          <map key='[Abbreviation]' value='[Global YouTube Statistics 2.csv].[Abbreviation]' />
+          <map key='[Country (Global YouTube Statistics 2.csv)]' value='[Global YouTube Statistics 2.csv].[Country]' />
+          <map key='[Country]' value='[Global YouTube Statistics 1.csv].[Country]' />
+          <map key='[Country_id (Global YouTube Statistics 2.csv)]' value='[Global YouTube Statistics 2.csv].[Country_id]' />
+          <map key='[Country_id]' value='[Global YouTube Statistics 1.csv].[Country_id]' />
+          <map key='[Gender]' value='[Global YouTube Statistics 1.csv].[Gender]' />
+          <map key='[Gross tertiary education enrollment (%)]' value='[Global YouTube Statistics 2.csv].[Gross tertiary education enrollment (%)]' />
+          <map key='[Latitude]' value='[Global YouTube Statistics 2.csv].[Latitude]' />
+          <map key='[Longitude]' value='[Global YouTube Statistics 2.csv].[Longitude]' />
+          <map key='[Population]' value='[Global YouTube Statistics 2.csv].[Population]' />
+          <map key='[Title]' value='[Global YouTube Statistics 1.csv].[Title]' />
+          <map key='[Unemployment rate]' value='[Global YouTube Statistics 2.csv].[Unemployment rate]' />
+          <map key='[Urban_population]' value='[Global YouTube Statistics 2.csv].[Urban_population]' />
+          <map key='[Youtuber]' value='[Global YouTube Statistics 1.csv].[Youtuber]' />
+          <map key='[category]' value='[Global YouTube Statistics 1.csv].[category]' />
+          <map key='[channel_type]' value='[Global YouTube Statistics 2.csv].[channel_type]' />
+          <map key='[channel_type_rank]' value='[Global YouTube Statistics 2.csv].[channel_type_rank]' />
+          <map key='[country_rank]' value='[Global YouTube Statistics 2.csv].[country_rank]' />
+          <map key='[created_date]' value='[Global YouTube Statistics 2.csv].[created_date]' />
+          <map key='[created_month]' value='[Global YouTube Statistics 2.csv].[created_month]' />
+          <map key='[created_year]' value='[Global YouTube Statistics 2.csv].[created_year]' />
+          <map key='[highest_monthly_earnings]' value='[Global YouTube Statistics 2.csv].[highest_monthly_earnings]' />
+          <map key='[highest_yearly_earnings]' value='[Global YouTube Statistics 2.csv].[highest_yearly_earnings]' />
+          <map key='[lowest_monthly_earnings]' value='[Global YouTube Statistics 2.csv].[lowest_monthly_earnings]' />
+          <map key='[lowest_yearly_earnings]' value='[Global YouTube Statistics 2.csv].[lowest_yearly_earnings]' />
+          <map key='[rank]' value='[Global YouTube Statistics 1.csv].[rank]' />
+          <map key='[subscribers]' value='[Global YouTube Statistics 1.csv].[subscribers]' />
+          <map key='[subscribers_for_last_30_days]' value='[Global YouTube Statistics 2.csv].[subscribers_for_last_30_days]' />
+          <map key='[uploads]' value='[Global YouTube Statistics 1.csv].[uploads]' />
+          <map key='[video views]' value='[Global YouTube Statistics 1.csv].[video views]' />
+          <map key='[video_views_for_the_last_30_days]' value='[Global YouTube Statistics 2.csv].[video_views_for_the_last_30_days]' />
+          <map key='[video_views_rank]' value='[Global YouTube Statistics 2.csv].[video_views_rank]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Youtuber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Youtuber]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>Youtuber</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscribers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[subscribers]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>subscribers</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video views</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video views]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>video views</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uploads</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[uploads]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>uploads</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Country_id]</local-name>
+            <parent-name>[Global YouTube Statistics 1.csv]</parent-name>
+            <remote-alias>Country_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (Global YouTube Statistics 2.csv)]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Country_id (Global YouTube Statistics 2.csv)]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Country_id</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Abbreviation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Abbreviation]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Abbreviation</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel_type]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>channel_type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_views_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video_views_rank]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>video_views_rank</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[country_rank]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>country_rank</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_type_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[channel_type_rank]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>channel_type_rank</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>video_views_for_the_last_30_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[video_views_for_the_last_30_days]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>video_views_for_the_last_30_days</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lowest_monthly_earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lowest_monthly_earnings]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>lowest_monthly_earnings</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highest_monthly_earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highest_monthly_earnings]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>highest_monthly_earnings</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lowest_yearly_earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lowest_yearly_earnings]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>lowest_yearly_earnings</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>highest_yearly_earnings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[highest_yearly_earnings]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>highest_yearly_earnings</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subscribers_for_last_30_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[subscribers_for_last_30_days]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>subscribers_for_last_30_days</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[created_year]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>created_year</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_month]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>created_month</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_date</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[created_date]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>created_date</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross tertiary education enrollment (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Gross tertiary education enrollment (%)]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Gross tertiary education enrollment (%)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unemployment rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unemployment rate]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Unemployment rate</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urban_population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Urban_population]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Urban_population</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Global YouTube Statistics 2.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]&quot;' value='Youtuber Count' />
+        </aliases>
+      </column>
+      <column caption='Current Views Rate (Last 30 days)' datatype='real' name='[Calculation_973903441888083968]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([video_views_for_the_last_30_days])/SUM([video views])' />
+      </column>
+      <column aggregation='CountD' caption='Youtuber Count' datatype='integer' datatype-customized='true' name='[Calculation_973903441891713026]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INT(IF [Youtuber (copy)_973903441891098625]=&apos;text&apos; THEN &quot;1&quot; ELSE &quot;0&quot;&#13;&#10;END)' />
+      </column>
+      <column datatype='string' name='[Country (Global YouTube Statistics 2.csv)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country id (Global YouTube Statistics 2.csv)' datatype='integer' name='[Country_id (Global YouTube Statistics 2.csv)]' role='dimension' type='ordinal' />
+      <column caption='Country id' datatype='integer' name='[Country_id]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Urban population' datatype='integer' name='[Urban_population]' role='measure' type='quantitative' />
+      <column caption='Youtuber' datatype='string' datatype-customized='true' name='[Youtuber (copy)_973903441891098625]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='STR([Youtuber])' />
+      </column>
+      <column caption='Youtuber (Count)' datatype='integer' datatype-customized='true' name='[Youtuber]' role='dimension' type='ordinal' />
+      <column caption='Global YouTube Statistics 1.csv' datatype='table' name='[__tableau_internal_object_id__].[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]' role='measure' type='quantitative' />
+      <column caption='Global YouTube Statistics 2.csv' datatype='table' name='[__tableau_internal_object_id__].[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Channel Type' datatype='string' name='[channel_type]' role='dimension' type='nominal' />
+      <column caption='Channel Type Rank' datatype='integer' name='[channel_type_rank]' role='measure' type='quantitative' />
+      <column caption='Country Rank' datatype='integer' name='[country_rank]' role='measure' type='quantitative' />
+      <column caption='Created Date' datatype='integer' name='[created_date]' role='measure' type='quantitative' />
+      <column caption='Created Month' datatype='string' name='[created_month]' role='dimension' type='nominal' />
+      <column caption='Created Year' datatype='integer' name='[created_year]' role='dimension' type='quantitative' />
+      <column caption='Highest Monthly Earnings' datatype='real' name='[highest_monthly_earnings]' role='measure' type='quantitative' />
+      <column caption='Highest Yearly Earnings' datatype='real' name='[highest_yearly_earnings]' role='measure' type='quantitative' />
+      <column caption='Lowest Monthly Earnings' datatype='real' name='[lowest_monthly_earnings]' role='measure' type='quantitative' />
+      <column caption='Lowest Yearly Earnings' datatype='real' name='[lowest_yearly_earnings]' role='measure' type='quantitative' />
+      <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+      <column caption='Subscribers' datatype='integer' name='[subscribers]' role='measure' type='quantitative' />
+      <column caption='Subscribers For Last 30 Days' datatype='integer' name='[subscribers_for_last_30_days]' role='measure' type='quantitative' />
+      <column caption='Uploads' datatype='integer' name='[uploads]' role='measure' type='quantitative' />
+      <column caption='Video Views' datatype='integer' name='[video views]' role='measure' type='quantitative' />
+      <column caption='Video Views For The Last 30 Days' datatype='integer' name='[video_views_for_the_last_30_days]' role='measure' type='quantitative' />
+      <column caption='Video Views Rank' datatype='integer' name='[video_views_rank]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_973903441891713026]' derivation='Count' name='[cnt:Calculation_973903441891713026:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/arunp/AppData/Local/Temp/TableauTemp/#TableauTemp_1vuxpsx1yk16jd18wnz3b02r4qr1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/07/2024 02:48:59 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374' table='[Extract].[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]' type='table' />
+            <relation name='Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925' table='[Extract].[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]' type='table' />
+          </relation>
+          <cols>
+            <map key='[AGE]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[AGE]' />
+            <map key='[Abbreviation]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Abbreviation]' />
+            <map key='[Country (Global YouTube Statistics 2.csv)]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Country]' />
+            <map key='[Country]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[Country]' />
+            <map key='[Country_id (Global YouTube Statistics 2.csv)]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Country_id]' />
+            <map key='[Country_id]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[Country_id]' />
+            <map key='[Gender]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[Gender]' />
+            <map key='[Gross tertiary education enrollment (%)]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Gross tertiary education enrollment (%)]' />
+            <map key='[Latitude]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Latitude]' />
+            <map key='[Longitude]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Longitude]' />
+            <map key='[Population]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Population]' />
+            <map key='[Title]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[Title]' />
+            <map key='[Unemployment rate]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Unemployment rate]' />
+            <map key='[Urban_population]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[Urban_population]' />
+            <map key='[Youtuber]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[Youtuber]' />
+            <map key='[category]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[category]' />
+            <map key='[channel_type]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[channel_type]' />
+            <map key='[channel_type_rank]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[channel_type_rank]' />
+            <map key='[country_rank]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[country_rank]' />
+            <map key='[created_date]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[created_date]' />
+            <map key='[created_month]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[created_month]' />
+            <map key='[created_year]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[created_year]' />
+            <map key='[highest_monthly_earnings]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[highest_monthly_earnings]' />
+            <map key='[highest_yearly_earnings]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[highest_yearly_earnings]' />
+            <map key='[lowest_monthly_earnings]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[lowest_monthly_earnings]' />
+            <map key='[lowest_yearly_earnings]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[lowest_yearly_earnings]' />
+            <map key='[rank]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[rank]' />
+            <map key='[subscribers]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[subscribers]' />
+            <map key='[subscribers_for_last_30_days]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[subscribers_for_last_30_days]' />
+            <map key='[uploads]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[uploads]' />
+            <map key='[video views]' value='[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374].[video views]' />
+            <map key='[video_views_for_the_last_30_days]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[video_views_for_the_last_30_days]' />
+            <map key='[video_views_rank]' value='[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925].[video_views_rank]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>995</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Youtuber</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Youtuber]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>Youtuber</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AGE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AGE]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>AGE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscribers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[subscribers]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>subscribers</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>289</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video views</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[video views]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>video views</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>988</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Title]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>Title</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>992</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uploads</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[uploads]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>uploads</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>777</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Country_id]</local-name>
+              <parent-name>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</parent-name>
+              <remote-alias>Country_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Global YouTube Statistics 1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>995</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country (Global YouTube Statistics 2.csv)]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Country_id (Global YouTube Statistics 2.csv)]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Country_id</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>995</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Abbreviation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Abbreviation]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Abbreviation</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_type]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>channel_type</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video_views_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[video_views_rank]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>video_views_rank</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>954</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[country_rank]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>country_rank</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>247</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_type_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[channel_type_rank]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>channel_type_rank</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>287</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>video_views_for_the_last_30_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[video_views_for_the_last_30_days]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>video_views_for_the_last_30_days</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>909</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lowest_monthly_earnings</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lowest_monthly_earnings]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>lowest_monthly_earnings</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>557</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>highest_monthly_earnings</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[highest_monthly_earnings]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>highest_monthly_earnings</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>736</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lowest_yearly_earnings</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lowest_yearly_earnings]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>lowest_yearly_earnings</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>757</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>highest_yearly_earnings</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[highest_yearly_earnings]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>highest_yearly_earnings</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>419</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subscribers_for_last_30_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[subscribers_for_last_30_days]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>subscribers_for_last_30_days</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[created_year]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>created_year</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[created_month]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>created_month</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_date</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[created_date]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>created_date</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gross tertiary education enrollment (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Gross tertiary education enrollment (%)]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Gross tertiary education enrollment (%)</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unemployment rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unemployment rate]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Unemployment rate</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Urban_population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Urban_population]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Urban_population</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Global YouTube Statistics 2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Autos &amp; Vehicles&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Film &amp; Animation&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;People &amp; Blogs&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;News &amp; Politics&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gaming&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Travel &amp; Events&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Howto &amp; Style&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pets &amp; Animals&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Science &amp; Technology&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Trailers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NIL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Movies&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shows&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nonprofits &amp; Activism&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Entertainment&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Global YouTube Statistics 1.csv' id='Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374'>
+            <properties context=''>
+              <relation connection='textscan.1vb5nuw1bnni0g1aajud40s7zf3j' name='Global YouTube Statistics 1.csv' table='[Global YouTube Statistics 1#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='rank' ordinal='0' />
+                  <column datatype='string' name='Youtuber' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='integer' name='AGE' ordinal='3' />
+                  <column datatype='integer' name='subscribers' ordinal='4' />
+                  <column datatype='integer' name='video views' ordinal='5' />
+                  <column datatype='string' name='category' ordinal='6' />
+                  <column datatype='string' name='Title' ordinal='7' />
+                  <column datatype='integer' name='uploads' ordinal='8' />
+                  <column datatype='string' name='Country' ordinal='9' />
+                  <column datatype='integer' name='Country_id' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374' table='[Extract].[Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374]' type='table' />
+            </properties>
+          </object>
+          <object caption='Global YouTube Statistics 2.csv' id='Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925'>
+            <properties context=''>
+              <relation connection='textscan.1vb5nuw1bnni0g1aajud40s7zf3j' name='Global YouTube Statistics 2.csv' table='[Global YouTube Statistics 2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Country' ordinal='0' />
+                  <column datatype='integer' name='Country_id' ordinal='1' />
+                  <column datatype='string' name='Abbreviation' ordinal='2' />
+                  <column datatype='string' name='channel_type' ordinal='3' />
+                  <column datatype='integer' name='video_views_rank' ordinal='4' />
+                  <column datatype='integer' name='country_rank' ordinal='5' />
+                  <column datatype='integer' name='channel_type_rank' ordinal='6' />
+                  <column datatype='integer' name='video_views_for_the_last_30_days' ordinal='7' />
+                  <column datatype='real' name='lowest_monthly_earnings' ordinal='8' />
+                  <column datatype='real' name='highest_monthly_earnings' ordinal='9' />
+                  <column datatype='real' name='lowest_yearly_earnings' ordinal='10' />
+                  <column datatype='real' name='highest_yearly_earnings' ordinal='11' />
+                  <column datatype='integer' name='subscribers_for_last_30_days' ordinal='12' />
+                  <column datatype='integer' name='created_year' ordinal='13' />
+                  <column datatype='string' name='created_month' ordinal='14' />
+                  <column datatype='integer' name='created_date' ordinal='15' />
+                  <column datatype='real' name='Gross tertiary education enrollment (%)' ordinal='16' />
+                  <column datatype='integer' name='Population' ordinal='17' />
+                  <column datatype='real' name='Unemployment rate' ordinal='18' />
+                  <column datatype='integer' name='Urban_population' ordinal='19' />
+                  <column datatype='real' name='Latitude' ordinal='20' />
+                  <column datatype='real' name='Longitude' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925' table='[Extract].[Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Country_id]' />
+              <expression op='[Country_id (Global YouTube Statistics 2.csv)]' />
+            </expression>
+            <first-end-point object-id='Global YouTube Statistics 1.csv_E89E522B84AF4B219E5C62F469D7D374' />
+            <second-end-point object-id='Global YouTube Statistics 2.csv_C423A47C68A14C07A09332CE3D4DA925' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Gender based Count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global YouTube Statistics 1.csv+ (Multiple Connections)' name='federated.0o1ltuq0nd7in71bvu1va0i75wov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o1ltuq0nd7in71bvu1va0i75wov'>
+            <column aggregation='CountD' caption='Youtuber Count' datatype='integer' datatype-customized='true' name='[Calculation_973903441891713026]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(IF [Youtuber (copy)_973903441891098625]=&apos;text&apos; THEN &quot;1&quot; ELSE &quot;0&quot;&#13;&#10;END)' />
+            </column>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Youtuber' datatype='string' datatype-customized='true' name='[Youtuber (copy)_973903441891098625]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Youtuber])' />
+            </column>
+            <column caption='Youtuber (Count)' datatype='integer' datatype-customized='true' name='[Youtuber]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_973903441891713026]' derivation='Count' name='[cnt:Calculation_973903441891713026:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column caption='Subscribers' datatype='integer' name='[subscribers]' role='measure' type='quantitative' />
+            <column-instance column='[subscribers]' derivation='Sum' name='[sum:subscribers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]' value='115' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.64767956733703613' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]' />
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]' />
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]' />
+              <size column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:subscribers:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9230387210845947' />
+                <format attr='mark-color' value='#e15759' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]</rows>
+        <cols>([federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk] + [federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk])</cols>
+      </table>
+      <simple-id uuid='{A20433B4-FDE9-443D-89FC-BCA1FCB46223}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global YouTube Statistics 1.csv+ (Multiple Connections)' name='federated.0o1ltuq0nd7in71bvu1va0i75wov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o1ltuq0nd7in71bvu1va0i75wov'>
+            <column caption='Current Views Rate (Last 30 days)' datatype='real' name='[Calculation_973903441888083968]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([video_views_for_the_last_30_days])/SUM([video views])' />
+            </column>
+            <column aggregation='CountD' caption='Youtuber Count' datatype='integer' datatype-customized='true' name='[Calculation_973903441891713026]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(IF [Youtuber (copy)_973903441891098625]=&apos;text&apos; THEN &quot;1&quot; ELSE &quot;0&quot;&#13;&#10;END)' />
+            </column>
+            <column datatype='real' name='[Unemployment rate]' role='measure' type='quantitative' />
+            <column caption='Youtuber' datatype='string' datatype-customized='true' name='[Youtuber (copy)_973903441891098625]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Youtuber])' />
+            </column>
+            <column caption='Youtuber (Count)' datatype='integer' datatype-customized='true' name='[Youtuber]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_973903441891713026]' derivation='Count' name='[cnt:Calculation_973903441891713026:qk]' pivot='key' type='quantitative' />
+            <column caption='Subscribers' datatype='integer' name='[subscribers]' role='measure' type='quantitative' />
+            <column-instance column='[Unemployment rate]' derivation='Sum' name='[sum:Unemployment rate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[subscribers]' derivation='Sum' name='[sum:subscribers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[uploads]' derivation='Sum' name='[sum:uploads:qk]' pivot='key' type='quantitative' />
+            <column caption='Uploads' datatype='integer' name='[uploads]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_973903441888083968]' derivation='User' name='[usr:Calculation_973903441888083968:qk]' pivot='key' type='quantitative' />
+            <column caption='Video Views' datatype='integer' name='[video views]' role='measure' type='quantitative' />
+            <column caption='Video Views For The Last 30 Days' datatype='integer' name='[video_views_for_the_last_30_days]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[usr:Calculation_973903441888083968:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:subscribers:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:Unemployment rate:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:uploads:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[usr:Calculation_973903441888083968:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:subscribers:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:Unemployment rate:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:uploads:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[usr:Calculation_973903441888083968:qk]' value='p0.00%' />
+            <format attr='width' field='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]' value='250' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{52CEF57B-1511-4453-ABFC-BD048FE109BF}' />
+    </worksheet>
+    <worksheet name='Source Data'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global YouTube Statistics 1.csv+ (Multiple Connections)' name='federated.0o1ltuq0nd7in71bvu1va0i75wov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o1ltuq0nd7in71bvu1va0i75wov'>
+            <column caption='Channel Type' datatype='string' name='[channel_type]' role='dimension' type='nominal' />
+            <column caption='Highest Monthly Earnings' datatype='real' name='[highest_monthly_earnings]' role='measure' type='quantitative' />
+            <column caption='Highest Yearly Earnings' datatype='real' name='[highest_yearly_earnings]' role='measure' type='quantitative' />
+            <column caption='Lowest Monthly Earnings' datatype='real' name='[lowest_monthly_earnings]' role='measure' type='quantitative' />
+            <column caption='Lowest Yearly Earnings' datatype='real' name='[lowest_yearly_earnings]' role='measure' type='quantitative' />
+            <column-instance column='[channel_type]' derivation='None' name='[none:channel_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[highest_monthly_earnings]' derivation='Sum' name='[sum:highest_monthly_earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[highest_yearly_earnings]' derivation='Sum' name='[sum:highest_yearly_earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lowest_monthly_earnings]' derivation='Sum' name='[sum:lowest_monthly_earnings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[lowest_yearly_earnings]' derivation='Sum' name='[sum:lowest_yearly_earnings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:highest_monthly_earnings:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:highest_yearly_earnings:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:lowest_monthly_earnings:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:lowest_yearly_earnings:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:channel_type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Animals&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Autos&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Comedy&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Education&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Entertainment&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Film&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Games&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Howto&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Music&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;News&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Nonprofit&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;People&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Sports&quot;' />
+              <groupfilter function='member' level='[none:channel_type:nk]' member='&quot;Tech&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]</column>
+            <column>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:channel_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:channel_type:nk]' value='152' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:channel_type:nk]</rows>
+        <cols>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{C00D71D6-ECDD-4EC4-8B41-D0E0255E4286}' />
+    </worksheet>
+    <worksheet name='Views by Category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Global YouTube Statistics 1.csv+ (Multiple Connections)' name='federated.0o1ltuq0nd7in71bvu1va0i75wov' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0o1ltuq0nd7in71bvu1va0i75wov'>
+            <column aggregation='CountD' caption='Youtuber Count' datatype='integer' datatype-customized='true' name='[Calculation_973903441891713026]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INT(IF [Youtuber (copy)_973903441891098625]=&apos;text&apos; THEN &quot;1&quot; ELSE &quot;0&quot;&#13;&#10;END)' />
+            </column>
+            <column caption='Youtuber' datatype='string' datatype-customized='true' name='[Youtuber (copy)_973903441891098625]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='STR([Youtuber])' />
+            </column>
+            <column caption='Youtuber (Count)' datatype='integer' datatype-customized='true' name='[Youtuber]' role='dimension' type='ordinal' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_973903441891713026]' derivation='Count' name='[cnt:Calculation_973903441891713026:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Youtuber]' derivation='None' name='[none:Youtuber:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[video views]' derivation='Sum' name='[sum:video views:qk]' pivot='key' type='quantitative' />
+            <column caption='Video Views' datatype='integer' name='[video views]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([video views])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]' />
+              <wedge-size column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:video views:qk]' />
+              <size column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:video views:qk]' />
+              <tooltip column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[cnt:Calculation_973903441891713026:qk]' />
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]' />
+              <text column='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:video views:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Youtuber:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{29A2861D-ABD3-4F5F-9C79-126D66F38D46}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Youtuber:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{592114C4-0E82-4CEF-ABAC-19812CF91F87}' />
+    </window>
+    <window class='worksheet' name='Views by Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:video views:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Youtuber:ok]</field>
+            <field>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{59295935-2056-4BBE-A5BF-6EC2B45F79EB}' />
+    </window>
+    <window class='worksheet' name='Source Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:channel_type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0862907A-A087-4468-B0F0-1D936B685506}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Gender based Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[sum:subscribers:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0o1ltuq0nd7in71bvu1va0i75wov].[none:Gender:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DC4E06F5-2CBB-4D41-B934-4D1715B50F4D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Gender based Count' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAOuklEQVR4nO3dWXcU95mA8ad6X7WgpdECCIQEzQ422DGO7QT7ZDI5yZyxb+ZuPsFczWea
+      uxzPhfGJJ5PxgmVhdrQgIYSEkNCCWq1uSb3VPhdCghz7JDYoqi7+7++OsjBvt+rpWrq7SnNd
+      10UIRQW8HkAIL0kAQmkSgFCabwMwDINisej1GMLnfBuA67qYpun1GMLnfBuAEDtBAhBKkwCE
+      0iQAoTQJQChNAhBKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChNAhBKkwCE0iQAoTQJQChN
+      AhBKkwCE0kJeD/DKXJfK6jxD92doPZClt6uFgOb1UFtsFifHmFwsANBx+DR9nY2sL88w9nCR
+      1p6jHO5s9njGv2aUcsws6hzs6yYM2EaZ+yPDbARbeON0H2FNQ1/PMTI2SbS1h2O9nQQ9fr4d
+      s8rUxGO6ThwlAVilFW6P3KdmOkQTezh55gQxakwM32WNRs6cOkIstPna7/stgGuv85dv7tB1
+      8BAL977nUW7D65Ges3RGHi7Sl82SzWbZ25zAXJvju1vT7N3fxcLwINOrhtdTbissPODrwQHu
+      3JjEAHAM7n0/QDnRSXtgka9vTOPYZQYHrpPeux9jcZTh6ZynM+vlHINffcnVK3fZ+s0X5h5S
+      S2TIZrMcPrSPSMBi4voVVqN72RtZ5cr1B1jProfo+wCMxXGivW+zr6OTc9lu5pZWvR5pm2UY
+      lGsbFFdWKOkQj4ZYfrJEpv8YPd37OXlqPwuPFrwec1u8qZMPfv0ue2JhAOzqGgt2I28cPcCh
+      kxdh9QGV5Rn01qP0Hejm+LGjrDyd93TmYCTN2Xffp39v4/ayfGEDq7JOvrhBMBojYFSYqUR5
+      61gPPcffIlp+RMVwgNcgAL1coqG5GU2DRDKBadlej7QtEEnwxqljgMvC+CDXxpeoOZCORQEI
+      RxsI2DVvh3xBLJEiEnq+SjiWRSQR39zF0UJEYiH0SoVkQwMBDSLRGF5fWDYUjpFMRP5qWdeR
+      43Q2JTA2cgx8PcBq1SISjxF69jhiiQi2vRmA748BovEEG+vruO4eqpUqoWDj3/9Lu0QLhtl3
+      KIumAX2NXP7sMR19AcrG5m6PZZSwtYS3Q/4NgWAIvVrDcSGAjaGbRGIxKoUSrtuGaehonifw
+      Q6k9HRxp6UTDJTT4OUtrFkZNx3YhiI1eNQgEXpNjgEhnlvL9q+TXigyPz9KVqZ+DSqPylJvX
+      R1nbKDE1PEZ4bzudXe3M37/P8uoK48PTZA52ej3mNlOvUi5XMU2DaqWKG0uTcfIMP15mcfIa
+      VqqXRKaHwOIYs8urPJi4T1Nrh6czO5ZBuVzBME2q5TK6aTM5fI2ZxTyF5Tke51xa2xrpDpW5
+      Pf2Up9O3KYf3kYhurvqaXy+Prus66+vrtLW2UsrNcG3oIZnDpznW0143Z4Fc1yb3eIKhiVkS
+      7b1cOH2YcECjsDDJnbFZOvpPk93f6vWY2x6NDDIxv775h2CCU2++SXvCZvjGDdZCbVx86wQR
+      TaNWXOTmnXvEMn2cyR7Y3LXwyPrCAwaHp7f/3H3kPEcyGndvD1E0QmTPnKN7TxLHqjJy/Sp5
+      WvjFhZPEQ69LAG1tXo8ifMz3u0BCvAoJQChNAthlfryiteu6WJbl9Rg/2095riWAXebTQy5f
+      zv1TZv7B+wCGYfjiwRqGgWVZ6Lru9Sg/i2mavnh+X7S1BXAcx+tRfpaf8lz/4CxQsVj0xWba
+      siyq1SrpdNrrUV6K4zi4rkswGPR6lJdiWRahkH/fR92aX06DesS2bRzHIRwOez3KS9F1nWg0
+      6vUYL21rfjkGEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0CEEqTAITSJAChNAlAKE0C
+      EEqTAITSJAChNAlAKE0CEEqTAITS/PulTiCXy7GxUUf3A/gZ/P6dYNM0fft1Tng+v68DGB8f
+      J5/Pez2G8DHZBRJKkwCE0iQAoTQJQChNAhBK25mzQNUC1+6OoZs2wViK4ydP0xR/hdN7jsHc
+      3AodBzr9fZpK1L2dWb9KC0xvRPnw7AG0YIhE5BU3LHaNsZEJWiQA8Q+2Y+tXNNW4fZ1O1zGZ
+      GbvL8IMnBJIZ3n//bQrTd5maW6a4VibV3kGoukq+rPHB735HfG2aK9eGqVkBDpy6wNn9W3dO
+      dKmszPHd9buUzSDZCxfp72iiTm4BJl4DO3YMMDfyHZ9++imf/+83LC2vcH+2yIkzZ9kXXOT6
+      VAG9UqH10Fl+/9HbrBRKnP/gn/hlb5AnRQjGmzh26ixnTnQzd2+KrQueu47FnTsjdBw+wckj
+      Ge7fHKbqryt0izq3Y1uAfScv8vE7fQCsLY2xXqxSyOehsYf+thi1+ShNDUlCwRLRVCOpaAgj
+      HMJ1Ye7BKPO1MKmYib5Wxdj6nzoOuUKeSPMquqZx+GgP/n3zXdSjf8hZoHiyhWgEunr7OdTd
+      SkD72/9Mrlim90iWzuYU1gs3YdACQTobkwT27Ke/7yCpcFDOW4kdtTOrUzLD8RfudxtJt3Pp
+      vdOM37jK0NQqjQ1RWjq6aUxGIJLieO8+AOLth+lMw7lzp5gausFCNcGFC8eJBqL0H+0lHAhx
+      /tJv0RZHuXp9GDfRIAfFYkf5+gYZly9flg/DiVciOxRCaRKAUJoEIJQmAQilSQBCab4+CzQx
+      MeHb76X6/TvBcp9gj8l9gr0l9wkW4jUgAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQm
+      AQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKA
+      UJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQil
+      SQBCab6+T/DQ0BA+HR/XdXFdl0DAn69Btm379ibf8Hx+/97qG5ibmyOfz3s9hvAxf778CLFD
+      JAChNAlAKE0CEEqTAITSdi2A6btfMzAyy9ZZS720yJ/++BnLtR/5YbvKveEJjN0aTihr1wLY
+      ME0K0+MUDRdwWZ0Zo1CqsG79yA87Jk9mF/ix/yTETtrF9wGiZNpD5FaKNGXCPFgK098VB6A4
+      d49vbk5gmRbNfW/ywYnWZ3/HZfXRKAMjU5g1g+4z73Ghfy/a7g0tXnO7egzQ2dHCwlKO8lqB
+      YFMz8WfLU63d9OzroC3TwPKDx2ztFbm2ya3he6Qb9tDa3sijO0OU7N2cWLzudvWd4OieLpKP
+      bvLoSZSWzuM4hUcAjN66TqjjKNkDGUpPHz3f9XFdqk6E88eyhDQ4dTZOUg7bxQ7a3dUpEGNv
+      R5DR8RLdmeT2YsexqZSKzD+eZbWiby/XgiGOdCQYmZxjeXmJ+fkcluz/iB20ax+G21grEE02
+      opklVjZsOtqbKOVXCDS2ETaKzDx5SjTdRDwQprmtgbX8Ok1tewg4Bk9mZiibGm2d+9iTjqGx
+      +WG4y5cvy2eBxCvx9adBJQDxqmSPWihNAhBKkwCE0iQAoTQJQCjN12eB5ufnSafTXo/yUhzH
+      wXVd336v1jRNwuGw12O8tK35ff2d4HQ6TVtbm9djvBTbtnEcx7crka7rRKNRr8d4aVvzyy6Q
+      UJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQilSQBCaRKAUJoEIJQmAQil
+      SQBCaRKAUJoEIJQmAQil/eA7wblcDl3Xf+xn64pt2+i67otZf4zcKNtbW/P7+qoQ6+vrvv5S
+      vOu6hEL+vC6BYRhEIhGvx3hpW/P78+VHiB3iz5ef14Bfd322+HXLtWVrfn8/Ch/TNH/f6cPv
+      AW/N7+9HIcQr8v8WwHVxbIuaYRIMR4iEQtTni6tDrVLDdl3QAsRiMQIaWIaOabtEYzGCgfob
+      3HUdDN0kHHt2FTXXxTB0LMclGt2c2XUdjFoNmyCxWIRAHf0CXMfBMC3C0c0DXte2qOo6rguB
+      YMj/Abg4DP75vym6SWpWiF99+GtaknV4uUFjnj/+1wAt+5rRomnOv3meuP6EL766TSyuEWo5
+      xaW3+wjWz7qDY1W5d/0K315d4pP//HcyQCU3xRffjhAOusQ6j3PpQj/5qVt8eXeBGDW6zn3I
+      G4da6uJWto5R4s73X3NzqMQn//FvtAKFBwN8dq9EJhUi0dzp/wCc/CjFxgv88zs95CdvMDG7
+      zDvZLq/H+gFj+SmZX1zioxPtz5ZYjN68z5nf/CsH0wGu/M+fWDcO0hytn1+JXiux5+A5zi3d
+      3F52b3yaty79lq7GILe/+gvzhQ7GJjf4wyf/Qpwq//fFt1T2fUQy7H0ClUqZruwFqitDz5a4
+      LK84vP+bj+hJb17XtH6e7ZdUya/Q3JUloEFzcyPlufp8Y8wIJNl48C2fTriE0nt5773TbNTS
+      7E8H0XDJROOsuw7NXg/6gniqja6UztwLyyzNJRWLgBagpSVOsVAmmE4S1wDiJFIapuVA2Ps3
+      yVJNGVJUeLi1wIVIKsitP3/OTdehZf9J/wcQCAQxLROIYNs2Wp0+pFRnlo8/zuI6NpO3Bng4
+      m0dzLSwX0MB0bJI+eEvScTbfwQawLItgIIBlP797+ebvoE5pGofOvs+hs2BbOt9/9YX/zwLF
+      O3ooTN7DsG0ezy7R0lyf9wtYyy2wulHDdW10wyQUStDWajL9uIBjlZmtWDSHvH/V/Huao2Hm
+      lguY1VWe5Bza2xtI1dZ5sq6jr81R0tNEI/W5Wrmuy9L8LBXDxrV0TFvz/0chWltbeHj7CqOP
+      V0m2HeTiW6dIRupvRdpYnuHGrVGKVYOGjl7eefMkIX2VqwOD5KsOvacvcvJgG/V0Iqg4O8qX
+      N++ztlwg3t5C/6lfcqIDBr/9ntUaHDp5ntO9Gcq5Ga4M3kUnyrl3P2B/S6IutgLLU7cZGJqi
+      uLxGMtPGsbPv0mI+5s74LLqlsT97zv8B+PWzQKI+1Oe2SohdIgEIpUkAQmkSgFCaBCCUJgEI
+      pUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpUkAQmkSgFCaBCCUJgEIpf0/yG3YoHIQ
+      T/YAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='45' name='KPI' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Source Data' width='192'>
+      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
+      jPY6HA6MRiNPPvkkgiDw8ssv43a77xgLUCgUHDhwAIVCwfT0NOfPn5933OFwsGbNGqKjo1Gr
+      1TidTrq6unj22WeRSCSo1Wox1fn27duRSqXz6tTpdGzevBlBECgvLycvL4/h4WHi4+PF1DId
+      HR0kJibS0tJyNwZgpfzYUbpClURnFLM6E1SxGWzb/igxs22Ujxp5fEUJyVVOHt3zKGHWLn5U
+      Xk320uUITjPl5Y08UwAmq4f/9td/R1yIG3f7JTJ3HGR1KvgdGiJCOug12BntnMDgfHRe7TlF
+      69mT76Ttn17B4gS5MpxVWx4lMcPNj5tj2XlgGVO9P2R6uJ8TF2pIyl+K0jPLxbJqMpdDbNZS
+      du1ejrHrBkaHwJoVxRw1wxO7NyH9/Lz8gbkNJ0JCQjCbzXzwwQesXbuWsLAwwsLC6O/vn3fu
+      xYsXqa+vJz09nT179ojfj4+P09PTwwcffIDJZGLt2rVkZ2fT0tLCs88+S09Pj9j9j46OkpmZ
+      iSAImM1m0QAWL17MkSNHqK6uJiQkhKeffprw8PmyF4VCgcPhYGpqStwd5m4MQCaTIZPJmJqa
+      4uTJk7ekVImIiOD8+fPYbDYx/tDX18fhw4exWCwUFBSg1Wppb2/HZDJhNBrZvn37vLTwMDeU
+      Gh8fZ9OmTTQ2NpKcnIxEIiEyMpL+/n6MRuPdJMYC0LPrS19meeTcgNw0/AkpIABBCCDXpPH8
+      H38LrQSQSGg//3OSMvOJDVeC1z3v/PJ3XmEycx/f2LaJn//w0J2b81sICAFUYUk8/c1vESef
+      q7en/Jf3XN7vA0EQGBgY4Ny5czzxxBOfuOv5xo0bKSwspLS0lBs3blBcXAzM/TCLi4vZtWsX
+      ZrOZ06dP09nZicFg4NChQzQ3N3P58mV27drFuXPnxIDRx1Oid3R0kJSUxPr166mqqqK1tZXV
+      q1fPq1+pVLJ3715OnTolRqHvVgrR3t5ObW0t+/btE4duN3nkkUfEudCbb74pykCef/55/H4/
+      7777LhkZGaxatYpNmzaJWeQKCgrmPcfm5mby8vKQSqUoFApmZ2eBudQrfr+f48ePY7FY7sYA
+      bFwtPcOYRkVY5AIWpd3mlIhEFqjNnDp2hq0bitiUp+InP32TgrQIwuNyuLmvpARAriY/P5dz
+      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
+      6Cq5WQJmvAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Views by Category' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAQNklEQVR4nO3dS3ATd57A8W/LkiVjWxaSg9+WIWxwMhjIBMfZAHkQnMxhalOVqcp9c9jL
+      Xvaylz3luKet2tvs1mZqq3Z2K8zUhLhCBkIymQFsJxA/sc3DxpYf8kuyQLb1aqnV/z1kxhUS
+      CDboxfTvc8K21P0Xpa+6/5K6W1NKKYSwKFuxByBEMUkAwtIkAGFpEoCwNAlAWJoEICxNAhCW
+      Zv/LP+LxOJlMpphjEaLgNPkgTFiZ7AIJS5MAhKVJAMLSJABhaRKAsDQJQFiaBCAsTQIQliYB
+      CEuTAISlSQDC0iQAYWkSgLA0CUBYmgQgLE0CEJYmAQhLkwCEpUkAwtIkAGFpEoCwNAlAWJoE
+      ICxNAhCWJgEIS5MAhKVJAMLSJABhaRKAsDQJQFiaBCAsTQIQliYBCEuTAISlSQDC0iQAYWkS
+      gLA0CUBYmv3hNxFWtb6+zkcffUR1dTVvv/02Dofjgbft6+vj2LFjWz+nUilOnz6N3+/ntdde
+      Y3R0lJmZGVwuFx6Ph66uLmy24r/+SgDigQzDYP/+/SSTSa5cuUIwGGT//v3cvn2b8vJyqqur
+      icVi7N27l2g0yqVLl5ifn+fNN9/E6/WyublJZWUlSqmtC7GXlZURjUaZnZ1lYGAAn8+Hruus
+      rq7S0dHB9evXefXVV/H7/QV5jMVPUJS0iYkJ9u3bx/T0NG63m1gsxrPPPktlZSWapnHq1Cmi
+      0SgA165dw+fzoWkaExMTHDlyhMuXL6PrOi6Xi5/97Gfouo5SiqWlJV5//XXi8TgOh4MjR45Q
+      UVFBU1MTCwsLBXt8cqV48UDJZJJoNEpDQwOhUIjBwUE6Ozu5ceMGHo+HYDCIpmkcP36ccDiM
+      UoqpqSleeeUVAC5evIjP5+PQoUOEQiFGRkbw+/243W7q6uq4fPkyzz33HMFgkKGhIU6dOsXs
+      7CwHDx6ksbGxII9RAhCPLBKJ4PV60TTtsZZz69Yt7t69S1dX12Mva6ckAGFpMgkWwLe7Oz09
+      PbzzzjuMjo4SDAY5ceIEtbW1jI2NMT8/z4kTJzh37hxtbW10dXWxvLzM0NAQqVSKvXv3EggE
+      OHnyJLt372ZhYYHx8XG6u7u5cOECAG+99RZKKc6fP4/H4+HgwYNcuHCBd999F4CxsTECgQBH
+      jx5l9+7d9PT08Prrr9Pf309zczOdnZ07ekxKKUzTxDAMNjfWubMWYXNzA13XSes6eiolAYhv
+      KaXweDxks1mef/557HY7kUiE2tpaent78fv9bG5usrm5icvlAqChoYHjx48zNjbG4uIiJ0+e
+      ZGBggO7ubtxuN6ZpYrPZOHXqFJ999hmGYbC4uMiBAweYn59HKUVFRcXWGJaWlgBwuVz09fXh
+      cDhYXV3F6/USCoW29ThSqRSry8vMzkwzNzPD3TsRotEoeip139tLAAKAXbt2bb3PPzg4SFVV
+      Fc888wwAPp+PI0eOsLi4yHvvvceZM2c4fPgwAMPDw3R2dhIKhbh48SJutxuAmpqarWWfP3+e
+      Y8eO4XQ60TSNbDaLaZpUV1ff81nAG2+8gWmanD59GsMwmJ+fx+l0snfvXtbX1+87bqUU8ViM
+      6+NjTIyOsrQYJBGPs909ewlAAN+++i4uLjI0NMTdu3dZW1vD4XBgmibt7e0MDAzQ2dnJ2bNn
+      aWhoYGBggEOHDvHUU09RWVlJIpHAbrdz9OhRBgcH0TSNcDjM+Pg4yWSS4eFhPB4P7e3t9Pb2
+      4vV6CQQChMNhRkZG0HWdiooKpqen6e7upr6+nomJCXw+H1evXqWpqeme8ep6iunJKUaHBrgx
+      PoFhZB7pccskWDxQOp2mrKyMsrKye36vlCKVSt2z+/IXhmFgmibl5eU/+FsymbzvfbLZLIZh
+      4HQ6HzqmeCzG4NUrXOnr4+6dyA4ezf1JAKLkKaWIbW7yde9lrvT1kUjEc7Zs2QUSJc3IZBi8
+      eoUvzp0jHo/lfPkSgChJSinmAgE+/fgMiwvzeVuPBCBKjp5K8cX5c3x1+RKmaeZ1XRKAKCmR
+      tTV+8+v/YWFutiDrkwBESTBNk7GRYT756Hck4rmb5D6MBCCKTinFnz6/wJefX8DMZgu6bglA
+      FJWRyfBpz8dc6estyvolAFE0uq7T89vTjAwOFm0MEoAoCsMw+Pg3HzI6NFTUccghkaLglFJ8
+      8tHviv7kBwlAFJhSij998TnffNVf7KEAEoAoIKXUn7/W8PtiD2WLBCAKJrSywu8/PrPt7+oX
+      ggQgCiKVSvGb//s1qQccmVUsEoDIO1MpfnX1a4aTCcwCn/XhYeRtUJF3I4tBfn/zOmatj83K
+      SlpWVnGm05RCCrIFEHmlGwb/2d+LqRRoGvFdFUy2tXKnxk0pzAQkAJFXZyfGmL97557fmTYb
+      C/V1zDY2YJQV9ykou0Aib8KxTU4PPeBrDprGuruapMtF8+oq1fFEUXaJZAsg8ubMtVFiaf1H
+      b5MudzDT3MRyra8oE2QJQORFNJng/I2J7d1Y0wj5vEy1tpB0Ogs6N5AARF70jF0jZRjbv4Om
+      kaxwMelvIeKpKVgEEoDIuWgyyfkb1x/pvspmI1i3h5nmRjLfOx9RPkgAIue+Csywnko++gI0
+      jc2qKibbWlmvqszr1kACEDmllOLyzO2cLCvjcBBoamRxz1Nk8zRBlgBETi1vbDC+vJS7BWoa
+      a7s9TPlbibtcOd8aSAAipy5NT2Hk+lw+mkbK5eR2azPh3Z6cRiABiJxRStE3M52/5dtsLO15
+      iumWJtL23HyGKwGInInE4wTXo/ldiaYRq6xksq2Vu9VVj701kABEzkythdB38t7/YzDsduYa
+      G1ioryNre/QJsgQgcuba0mJhV6hp3KlxM+n3E6uoeKStgQQgcsJUipurq4VfsaahO8uZbmkm
+      5N294wgkAJETacNgeeP+1/EqBGXTWH6qltutLeiO7U+QJQCRE+upFBvFPt73zwfcTPlbueOu
+      3tbWQAIQObFSxFf/7zPsduYb6plrbMCw/fhTXA6IETmxEL1b7CHcS9OIuqtJuJw0r4RwJxL3
+      vZlsAURO3CngOf13Il1eTqCliRWf974H3EgAIicSmUe7Tm8hKE1jpdbHVGsLqXLHPX+TAERO
+      JEs4AGDrgJup1lYi3zkjxQ/mABfO/C9lTYdZX5ri7Z//HM1mJ5s1OP/Jp+ypMWk4+g6tNQUe
+      vCh5iYcc+1sqsvYyFurrWK+qomVl9T6TYIcbM7bCRkJn8PJ5an9yjKt/uky5mSaTMTFL4WQu
+      ouTs6PDHYtM0NqqrmHI677cLpHH0hYOMjN2kalcFYyPD6NlvT2qkldhp7UTpcNkdD79RiUmX
+      O9BUKZ2qVzyx/u2Pf+CLyZvFHsaOySRY5ESF48nbAoAEIHJEAhCWVltVVewhPBIJQOREU42n
+      2EN4JBKAyIkmjwQgLKza6aTK6Sz2MHZMAhA5UV5mp8HtLvYwdkwCEDlRZrPxXH1DsYexYxKA
+      yJlDDU3FHsKOSQAiZ57ZswdXjk5YVSgSgMgZ765Kmj27iz2MHZEARM5omsbLe/cVexg7IgGI
+      nDq+7+mSuP7vdkkAIqcaazwc2FNX7GFsmwQgcsqmaZw68Gyxh7FtEoDIuZf37qPa6Sr2MLZF
+      AhA556mo4K1nn4ytgAQg8uLnP+nAUYCrPD4uCUDkxZ6qak49017sYTyUBCDy5heHny/5I8Uk
+      AJE3DW437z7/QrGH8aMkAJE3mqbxdwcP0VzCB8tIACKvKhwO3ut6udjDeCAJwKIMwyAcDgOw
+      vLxMNpv9wW0SiQTpdPqx1/Wiv61kJ8QSgEWtra3x4Ycfks1m+eUvf0k4HCYWixEKhZifn+fq
+      1avEYjHS6TQDAwOsrKw88rpsmsY/vHyclhL8pqgEYGGNjY0MDQ3h9/tZXl4mGAzyzTffMDg4
+      iM1mIxgMMjQ0hNPppLq6+rHWVeV08s8nu0vuFIoSgIW1t7dz6dIl2tracDqdDA8Ps7KyQltb
+      G1euXMEwDKqrq5mamiISiTz2+p6ureXvu14qqW+LyrlBLco0TQCy2Sw2mw1N00ilUjgcDpRS
+      mKaJw+FA0zTS6TR2ux17Do72Ukrx31e/5rcjQ4+9rFyQAETBZU2Tf7/4x5I4ma7sAj3hTNMk
+      lUphmiZKKYzvnKffMAx0Xd/6/Xdf60zTJJvNous6yWRy612g7/6cSqW27g+QTqfJZrMopdB1
+      fWsropTaGkM6nSaTydwzru8rs9n4xxOv8EJLaz7/a7al7P3333+/2IMQj25hYYHBwUFu3bpF
+      NBqlt7eXjo4OTNOkr6+P/v5+ampq+OCDD+jo6MDpdKKU4tNPP2VmZoZ4PM6XX36J3W6nrq6O
+      gYEBLly4QGVlJT09PdjtdhobGwmHw5w7d46ZmRk2Nja4efMmNTU1VFZW0t/fz9TUFDU1NQwM
+      DNDX10dVVRWjo6Ncv36dAwcO/GDcdlsZf9u2l0AkwtJ68S6xKluAJ1xdXR3RaJSamhpefPFF
+      3H8+OZXNZqOjo4OqqioaGxt56aWXtu4zOztLQ0MDFRUVvPDCCzQ0NHDw4EEAurq68Pv9tLW1
+      sWfPHgKBAADBYJDu7m7cbjfj4+Pous7c3BwAN27cIJlMsry8jNfrRdd1/H4/6+vrP/ruUYWj
+      nH/pfos3/uaHgRSKBPCEW1tbo7Ozk9XVVVZXV1lbWyMejxOPxzl79iw//elPyWQyhMNhQqHQ
+      1odbc3NzjI6Osry8TF1dHZqmkUwmmZubo7m5GcMwaG9vxzAMkskkXq+X0dFRNjY2qK+v5+mn
+      nyYej5NIJKirq2P//v1EIhEqKiqor69ncnKSo0ePEolE+LFpptPu4J9eO8kvDj9flHeHZBL8
+      hIvFYgQCAfbt28fS0hKJRIKysjI8Hg+bm5uk02laWlpYWFjA6XSyvr5OZ2cn8O0nvZqm4XQ6
+      2djYIBwO09jYSGVlJZqmcfv2bbxeL4FAgMOHD7O4uIjP52PXrl1MTU3R3NzM5OQkHR0dTE9P
+      s3//fgKBAC6XC5/Px/T0NG1tbdv6DEEpxdmJcX51pR+9gNcbkwBEyVBKEYhE+Nc/fEYwGi3I
+      OiUAUXJius5/fdXH57dukO8npwQgSpKpFMPBBf6j/3JetwYSgChp6axBz9g1fjs8RCwPF+OW
+      AMQTYXVzgzPXRvjs5o2cTpIlAPHEUEpxN5Hgk4kxzt+8znoy+djLlADEEymm6/TNTNM7M821
+      pSCZ+3zlYjskAPFEU0oRicf54+1Jrs7NMhNZI5nJbPv+EoD4qxJP60yGQowvLzGxsszq5gbR
+      ZPKB8wYJQPzVUkqRyWaJp9OEYpssrUdZT6VIZjIkdJ10NisBCGuTL8MJS5MAhKVJAMLSJABh
+      aRKAsDQJQFiaBCAsTQIQliYBCEuTAISlSQDC0iQAYWkSgLA0CUBYmgQgLE0CEJYmAQhLkwCE
+      pUkAwtIkAGFpEoCwNAlAWJoEICxNAhCWJgEIS5MAhKVJAMLSJABhaRKAsDQJQFiaBCAsTQIQ
+      liYBCEuTAISlSQDC0iQAYWkSgLA0CUBYmgQgLE0CEJYmAQhLkwCEpUkAwtIkAGFp/w+LkpSi
+      Lbz1UQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
